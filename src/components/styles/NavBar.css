@@ -1,7 +1,11 @@
 .app__header {
   background-color: #f5f5f5;
   padding: 10px;
+  /* position: fixed; */
+  width: 100%;
+  z-index: 1;
 }
+
 
 .app__menu {
   display: flex;

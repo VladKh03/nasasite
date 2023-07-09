@@ -1,12 +1,12 @@
-.picture {
-  width: auto;
-  height: 200px;
+* {	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-image: url("https://www.hdwallpapers.in/download/stars_space_darkness_night_black_sky_background_hd_space-HD.jpg");
+	background-attachment: fixed;
+	color: #fafafa;
+	overflow-x: hidden;
 }
 
-.picture__image {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-}
