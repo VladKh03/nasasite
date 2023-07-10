@@ -4,7 +4,8 @@ import Carousel from "../carousel/Carousel";
 import "../styles/HomeUpper.css";
 
 const Upper = () => {
-  const API_KEY = 's49XB3dFWs287FSDEdZsFDkdaTYj7am6POMFNvh4'
+  // const API_KEY = 's49XB3dFWs287FSDEdZsFDkdaTYj7am6POMFNvh4'
+  const API_KEY = 'MYdOYnmMAg1Zl76exfc49h4JmSZTcypyoDBrredS'
   const [photosData, setPhotosData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -39,15 +40,19 @@ const Upper = () => {
   }, [photosData]);
 
   return (
-    <div className="carousel-section">
-      <div className="carousel-header">
-        <h1>Discover Earth</h1>
+    <>
+      <div className="begin">
       </div>
-      <div className="carousel-container">
-          {!isLoading && isLoaded && <Carousel images={photosData} />}
-          {!isLoading && !isLoaded && <div>Loading...</div>}
+      <div className="carousel-section">
+        <div className="carousel-header">
+          <h1>Discover Earth</h1>
+        </div>
+        <div className="carousel-container">
+            {!isLoading && isLoaded && <Carousel images={photosData} />}
+            {!isLoading && !isLoaded && <div>Loading...</div>}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
